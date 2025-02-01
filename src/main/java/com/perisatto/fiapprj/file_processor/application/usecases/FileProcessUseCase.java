@@ -144,6 +144,7 @@ public class FileProcessUseCase {
 		requestRepository.updateRequest(request);
 		
 		Notification notification = new Notification();
+		notification.setOwner(Long.getLong(request.getOwner()));
 		notification.setRequestId(request.getId());
 		notification.setMessage(errorMessage);
 		

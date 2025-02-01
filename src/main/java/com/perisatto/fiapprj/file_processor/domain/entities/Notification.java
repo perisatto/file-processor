@@ -6,9 +6,16 @@ public class Notification implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
+	private Long owner;
 	private String requestId;
-	private String message;
+	private String message;	
 	
+	public Long getOwner() {
+		return owner;
+	}
+	public void setOwner(Long owner) {
+		this.owner = owner;
+	}
 	public String getRequestId() {
 		return requestId;
 	}
