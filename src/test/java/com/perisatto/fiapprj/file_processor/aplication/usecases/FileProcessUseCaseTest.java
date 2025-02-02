@@ -60,7 +60,7 @@ public class FileProcessUseCaseTest {
 		.thenReturn(true);
 		
 		
-		String owner = "me";
+		String owner = "10";
 		Integer interval = 10;
 		String videoFileName = "JohnCenaChairFight.mpeg";						
 		
@@ -78,7 +78,7 @@ public class FileProcessUseCaseTest {
 		when(fileRepositoryManagement.getFileToProcess(any(String.class), any(String.class)))
 		.thenReturn(inputStream);
 		
-		String owner = "me";
+		String owner = "10";
 		Integer interval = 50;
 		String videoFileName = "JohnCenaChairFight.mpeg";						
 		
@@ -101,7 +101,7 @@ public class FileProcessUseCaseTest {
 
 		doThrow(new Exception()).when(fileRepositoryManagement).writeProcessedFile(any(String.class), any(String.class), any(File.class));
 		
-		String owner = "me";
+		String owner = "10";
 		Integer interval = 10;
 		String videoFileName = "JohnCenaChairFight.mpeg";						
 		
